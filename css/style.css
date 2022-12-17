@@ -6,6 +6,14 @@
     margin-top: 50px;
     font-family: "Lato", serif;
 }
+.googleTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.googleTitle img {
+    width: 170px;
+}
 .title {
     text-align: center;
     font-size: 28px;
