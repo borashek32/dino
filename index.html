@@ -4,13 +4,20 @@
   <meta charset="UTF-8">
   <title>Google dino</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="shortcut icon" href="img/dino.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="game">
-      <img src="img/dino.png" id="dino" alt="dino">
-      <img src="img/cactus.png" id="cactus" alt="cactus">
+  <section class="wrapper">
+    <h1 class="title">Dino Game</h1>
+    <p>Press arrow&#8593; to jump. Press space or "stop" to stop the game</p>
+    <button id="startButton" class="startButton">Start</button>
+    <div class="game">
+      <div id="dino"></div>
+      <div id="cactus"></div>
     </div>
-  </div>
+  </section>
   <script src="js/script.js"></script>
 </body>
 </html>

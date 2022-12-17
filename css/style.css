@@ -1,3 +1,32 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+    font-family: "Lato", serif;
+}
+.title {
+    text-align: center;
+    font-size: 28px;
+}
+.startButton {
+    background-color: pink;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    width: 120px;
+    height: 30px;
+    transition: all .3s ease;
+    text-transform: uppercase;
+    outline: none;
+}
+.startButton:hover {
+    background-color: #f3b1c5;
+}
+.startButton:active {
+    background-color: #f698b5;
+}
 .game {
     width: 600px;
     height: 200px;
@@ -5,47 +34,54 @@
     margin: 0 auto;
     z-index: 1;
     position: relative;
+    background-color: #cde3f8;
 }
 #dino {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 160px;
-    z-index: 2;
-    left: 100px;
-}
-#cactus {
-    width: 100px;
+    background-image: url("/open_lesson/dino/img/dino.png");
+    background-size: 50px 50px;
+    width: 50px;
     height: 50px;
     position: absolute;
-    z-index: 3;
     top: 150px;
-    left: 480px;
-    animation: cactusMov 1.3s infinite linear;
+    z-index: 2;
+    left: 20px;
+}
+#cactus {
+    background-image: url("/open_lesson/dino/img/cactus.png");
+    background-size: 40px 60px;
+    width: 40px;
+    height: 60px;
+    position: absolute;
+    z-index: 3;
+    top: 140px;
+    left: 540px;
+}
+.game__cactusMov {
+    animation: cactusMov 1s infinite linear;
 }
 @keyframes cactusMov {
     0% {
-        left: 480px;
+        left: 580px;
     }
     100% {
-        left: 0;
+        left: -5px;
     }
 }
 .jump {
-    animation: jump .4s linear;
+    animation: jump .3s linear;
 }
 @keyframes jump {
     0% {
         top: 150px;
     }
     30% {
-        top: 100px;
+        top: 130px;
     }
     50% {
-        top: 50px;
+        top: 80px;
     }
     80% {
-        top: 100px;
+        top: 130px;
     }
     100% {
         top: 150px;
