@@ -135,17 +135,6 @@
     display: flex;
     gap: 30px;
 }
-.appear {
-    animation: appearance 2s ease;
-}
-@keyframes appearance {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
 .disappear {
     animation: disappear 2s ease;
 }
@@ -156,4 +145,19 @@
     100% {
         opacity: 0;
     }
+}
+.sec {
+    font-size: 70px;
+    font-weight: 600;
+    color: whitesmoke;
+}
+.time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid whitesmoke;
+    border-radius: 50%;
+    color: whitesmoke;
+    width: 100px;
+    height: 100px;
 }
