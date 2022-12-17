@@ -18,16 +18,21 @@
     text-align: center;
     font-size: 28px;
 }
-.startButton {
+.button {
     background-color: pink;
     cursor: pointer;
     border: none;
     border-radius: 3px;
-    width: 120px;
     height: 30px;
     transition: all .3s ease;
     text-transform: uppercase;
     outline: none;
+}
+.smallW {
+    width: 120px;
+}
+.bigW {
+    width: 220px;
 }
 .startButton:hover {
     background-color: #f3b1c5;
@@ -64,7 +69,7 @@
     top: 140px;
     left: 540px;
 }
-.game__cactusMov {
+.cactusMov {
     animation: cactusMov 1s infinite linear;
 }
 @keyframes cactusMov {
@@ -93,5 +98,62 @@
     }
     100% {
         top: 150px;
+    }
+}
+.background {
+    background-color: rgba(3, 3, 3, 0.85);
+    z-index: 4;
+    left: 0;
+    top: 0;
+    overflow-x: hidden;
+    transition: .2s;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.notification {
+    height: 300px;
+    width: 600px;
+    background-color: #ff2828;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.notificationText {
+    font-size: 50px;
+    color: whitesmoke;
+}
+.none {
+    display: none;
+}
+.buttonsSection {
+    display: flex;
+    gap: 30px;
+}
+.appear {
+    animation: appearance 2s ease;
+}
+@keyframes appearance {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.disappear {
+    animation: disappear 2s ease;
+}
+@keyframes disappear {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }
