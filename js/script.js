@@ -22,6 +22,9 @@ document.addEventListener("keydown", (e) => {
   if (e.keyCode === 38) {
     jump();
   }
+  if (e.keyCode === 32) {
+    e.preventDefault()
+  }
 });
 
 const jump = () => {
